@@ -1,0 +1,70 @@
+
+<!DOCTYPE html> 
+<html lang="pl">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta http-equiv="Content-Script-Type" content="text/javascript">
+ <title>Moja strona WWW</title>
+ <h5>1)kiedy powstał JavaScript (podaj datę).
+1995.
+<p>2)dlaczego jest to język skryptowy
+kod JavaScript jest uruchamiany wyłącznie w przeglądarkach
+<p>3)gdzie jest wykonywany JS (klient lub serwer)
+JavaScript (JS) może być wykonywany zarówno po stronie klienta, jak i serwera..
+<p>4)dlaczego jest JS to bezpieczne narzędzie
+Jedną z ważnych właściwości JavaScript jest to, że kod, który piszemy, jest wykonywany w przeglądarce użytkownika, do której mamy ograniczony dostęp.
+<p>5)czy jest to język obiektowy , jeśli tak to dlaczego.
+Tak JavaScript to język zorientowany obiektowo.
+<p>6)wymień zalety JS:
+Zaleta1 Prostota.Jedną z największych zalet JavaScript jest bardzo prosta i intuicyjna składnia.
+Zaleta2 Popularność – JavaScript to niezwykle popularny język.
+Zaleta3 Wpływ na stronę internetową – JavaScript pozwala odciążyć serwer, zmniejszając ilość danych przesyłanych pomiędzy hostingiem a użytkownikiem.
+<p>7)Framework to:
+To podstawowa struktura danego systemu lub aplikacji, która dostarcza gotowe komponenty lub rozwiązania
+<p>8)Do aplikacji mobilnych można użyć Framework
+ React Native.
+<p>9)Aplikacje responsywne to:
+Responsywne projektowanie stron internetowych – technika projektowania strony WWW, aby jej układ dostosowywał się samoczynnie do rozmiaru okna przeglądarki, 
+na której jest wyświetlany.
+<p>10)Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu 
+<!<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')">
+ten fragment kodu HTML tworzy przycisk "Nowa Strona", który wykonuje pewne działanie w momencie kliknięcia.
+ Jednak dokładne działanie jest uzależnione od implementacji funkcji WinOpen w JavaScript i wymaga dalszej pracy lub dostosowania kodu, aby osiągnąć pożądane zachowanie..
+Uwaga:
+gdy chcesz wyświetlić instrukcję, która nie powinna się wykonywać a tylko wyświetlać masz do 
+dyspozycji wyświetlanie znaków, które nie będą interpretowane jako instrukcja czyli > lub <
+znak < możesz wyświetlić jako &lsaquo;
+znak > możesz wyświetlić jako &rsaquo;
+<p>11)Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu 
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+ten fragment kodu otwiera nowe okno przeglądarki o określonych parametrach i wyświetla stronę "obraz.html" w tym oknie. 
+Parametry te pozwalają dostosować wygląd i zachowanie nowego okna przeglądarki..
+kliknij tutaj aby uzyskać opis poniższych opcji
+lub https://kursjs.pl/kurs/rozne/okna
+toolbar=no wytłumaczenie np. ukrywa przyciski katalogów
+directories=no, wytłumaczenie
+menubar=no, wytłumaczenie
+height=280, wytłumaczenie
+width=160, wytłumaczenie
+top=200, wytłumaczenie
+left=200 wytłumaczenie
+<p>12)Opisz następującą instrukcję window.close()</p>
+……………………………wytłumaczenie………………………………………………………………………………> </h5>
+ <script type="text/javascript">
+ function onclickHandler()
+ {
+ alert('Akapit został kliknięty!');
+ }
+ function okno_zamknij() 
+ {
+ window.close()
+ }
+ </script>
+ </head>
+ <body>
+ <p onclick="onclickHandler();">Kliknij ten akapit,
+ a pojawi się okno dialogowe.</p>
+ 
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+ </body>
+</html>
