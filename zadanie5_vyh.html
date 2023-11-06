@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h2  style="color:red"><center>wykonal : Valerii Vyhoniailo moj nomer w dzienniku 28 , czyli mam uklad [(28) mod4=0 uklad3]<center><h2>
+    <style>
+        .window {
+            position: absolute;
+            width: 300px;
+            padding: 10px;
+            background: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="WinOpen_vyhoniailo_1()">Otwórz Grafikę 1</button>
+    <button onclick="WinOpen_vyhoniailo_2()">Otwórz Grafikę 2</button>
+    <button onclick="WinOpen_vyhoniailo_3()">Otwórz Grafikę 3</button>
+    <button onclick="WinOpen_vyhoniailo_4()">Otwórz Grafikę 4</button>
+
+    <script>
+        let window1, window2, window3, window4;
+
+        function WinOpen_vyhoniailo_1() {
+            window1 = window.open('', 'Grafika 1', 'width=200,height=350,top=500,left=100');
+            window1.document.write("<img src='grafika1.jpg'  width='100%; height:100px;' /><p style='color: red;'>grzyb</p>");
+        }
+
+        function WinOpen_vyhoniailo_2() {
+            window2 = window.open('', 'Grafika 2', 'width=200,height=350,top=300,left=300');
+            window2.document.write("<img src='grafika2.jpg' width='100%' /><p style='color: green;'>góra</p>");
+        }
+
+        function WinOpen_vyhoniailo_3() {
+            window3 = window.open('', 'Grafika 3', 'width=200,height=350,top=150,left=500');
+            window3.document.write("<img src='grafika3.jpg' width='100%' /><p style='color: blue;'>las</p>");
+        }
+
+        function WinOpen_vyhoniailo_4() {
+            window4 = window.open('', 'Grafika 4', 'width=200,height=350,top=100,left=700');
+            window4.document.write("<img src='grafika4.jpg' width='100%' /><p style='color: purple;'>kwiat</p>");
+        }
+
+        function okno_zamknij_vyhoniailo_1() {
+            if (window1) {
+                window1.close();
+            }
+        }
+
+        function okno_zamknij_vyhoniailo_2() {
+            if (window2) {
+                window2.close();
+            }
+        }
+
+        function okno_zamknij_vyhoniailo_3() {
+            if (window3) {
+                window3.close();
+            }
+        }
+
+        function okno_zamknij_vyhoniailo_4() {
+            if (window4) {
+                window4.close();
+            }
+        }
+    </script>
+</body>
+</html>
