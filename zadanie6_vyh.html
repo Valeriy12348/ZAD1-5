@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie 6</title>
+</head>
+<body>
+
+
+  <button id="Mishchenko-Zadanie6">Zaliczenie Zadania 6</button>
+
+  <script>
+
+    function handleButtonClick() {
+
+
+      alert("Rodzaje okienek:\n\n1. Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK.\n");
+
+
+      let promptResult = prompt("Podaj wartość:");
+      alert("Okno prompt zwróciło wartość: " + promptResult);
+
+
+      let confirmResult = confirm("Czy potwierdzasz?");
+      if (confirmResult) {
+        alert("Potwierdzono.");
+      } else {
+        alert("Anulowano potwierdzenie.");
+      }
+
+
+      alert("Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:\n\n" +
+        "1. Nazwa zmiennej musi się zaczynać od litery, znaku '$' lub '_', może zawierać tylko litery (bez polskich znaków), cyfry oraz '$' i '_'.\n" +
+        "   Poprawne nazwy zmiennych: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz\n" +
+        "   Błędne nazwy zmiennych: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko.\n" +
+        "2. Wielkość liter ma znaczenie.\n" +
+        "   Rekord i rekord to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie początkujących programistów.\n" +
+        "3. Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.\n");
+
+
+      alert("Typy zmiennych w Javascript:\n\n" +
+        "Podstawowe zmienne liczbowe w JavaScript to:\n" +
+        "- Number: Typ liczbowy (zmienna całkowita, zmiennoprzecinkowa)\n" +
+        "- String: Typ tekstowy\n" +
+        "- Boolean: Typ logiczny\n" +
+        "- Null: Pusta zawartość\n" +
+        "- Undefined: Typ niezidentyfikowany\n" +
+        "- Object: Obiekt\n");
+
+
+      alert("Konwersje zmiennych:\n\n" +
+        "Wczytanie zmiennej z użyciem prompt wykonywane jest jako ciąg znaków, dlatego konieczna jest konwersja z ciągu znaków na wartości liczbowe, aby wykonywać obliczenia.\n" +
+        "- parseFloat(zmienna): Konwersja zmiennej do typu float\n" +
+        "- parseInt(zmienna): Konwersja zmiennej do typu int (liczbowego)\n" +
+        "- toString(zmienna): Konwersja zmiennej do typu łańcuchowego\n");
+    }
+
+
+    document.getElementById('Mishchenko-Zadanie6').addEventListener('click', handleButtonClick);
+  </script>
+
+</body>
+</html>
