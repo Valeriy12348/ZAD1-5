@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie 8</title>
+</head>
+<body>
+
+  
+  <button id="Vyhoniailo-Zadanie8">Pokaż Confirm Box</button>
+
+  <script>
+    
+    function showConfirm() {
+      var result = confirm("Naciśnij klawisz");
+      if (result) {
+        alert("Nacisnąłeś OK!");
+      } else {
+        alert("Nacisnąłeś Cancel!");
+      }
+    }
+
+    
+    document.getElementById('Vyhoniailo-Zadanie8').addEventListener('click', showConfirm);
+  </script>
+
+<h3>Zastosowanie:</h3>
+<p>Jest używany, jeśli chcemy zapytać użytkownika o weryfikacje, lub akceptację jakichś danych.<br>
+Użytkownik musi nacisnąć „OK.” w celu akceptacji bądź „Cancel” w celu odrzucenia. Jeżeli zostanie<br>
+wybrane „OK.” metoda zwraca true w przeciwnym wypadku false.
+</p>
+</body>
+</html>
