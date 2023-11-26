@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie 9 - Vyhoniailo</title>
+</head>
+<body>
+  <h1>Zadanie 9 - Vyhoniailo</h1>
+
+  <button id="Vyhoniailo" onclick="show_prompt()">Pokaż Prompt Box</button>
+
+  <h2>Teoria - Prompt Box</h2>
+  <p>
+    Zastosowanie: Jest używany, kiedy użytkownik ma wpisać coś, np. zanim wejdzie w dany moduł strony, np. hasło. Użytkownik po wpisaniu wartości może nacisnąć „OK” albo „Cancel”. Jeżeli użytkownik kliknie „OK”, metoda zwraca wpisaną wartość, a w przeciwnym wypadku zwraca null.
+  </p>
+
+  <script type="text/javascript">
+    function show_prompt() {
+      var name = prompt("Napisz imię", "Imię Nazwisko");
+      if (name != null && name != "") {
+        document.write("Witaj " + name + "! Jak się masz?");
+      }
+    }
+  </script>
+</body>
+</html>
