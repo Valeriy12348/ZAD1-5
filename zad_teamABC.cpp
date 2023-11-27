@@ -21,9 +21,30 @@ int main()
     /*Kto wygra³, ile bramek zdoby³a a,b,c, ile by³o
       remisów, bilans bramek
     */
-    int a=0,b=0,r=0,pktA=0;
+    int a=0,b=0,c=0,r=0,pA=0,pB=0,pC=0;
     cout << "Hello world!" << endl;
-    if(mecze[0][0]==mecze[0][1]){
+    for (int i=0;i<10;i++){
+    if(mecze[i][0]==mecze[i][1]){
         r++;
-        pktA=pktA+1;
+        pA=pA+1;
+        pB=pB+1;
     }
+    if(mecze[i][0]>mecze[i][1])
+    {
+       a++;
+       pA=pA+3;
+    }
+
+    else {b++;
+    pB=pB+3;
+    }
+    }
+    cout << a <<" "<<b<<" "<<c<< " " <<r<<endl;
+    cout << pA <<" "<<pB<<" "<<pC<<endl;
+    return 0;
+     if(pA>pB)
+    {
+       cout << "druzyna A wygrala" <<
+    }
+    else
+}
